@@ -1,0 +1,105 @@
+<div>
+  <nav
+    class="
+      navbar navbar-expand-md navbar-light
+      bg-light
+      shadow
+      rounded
+    "
+    id="nav-bar"
+
+  >
+    <a class="thumbnail" href="#thumb"
+      ><img
+        src="../../assets/IMG_6277.JPG"
+        width="45px"
+        height="45px"
+         /><span
+        ><img
+          src="../../assets/IMG_6277.JPG"
+          width="250"
+          height="250px"
+        /> </span
+    ></a>
+  
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse bg-light m-1"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav col-sm">
+        <li class="nav-item ml-2">
+          <a
+            class="nav-link"
+            routerLink=""
+            [ngClass]="{ active: activeTab === 'Home' }"
+            (click)="tabSelection('Home')"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            ><b>Home</b></a
+          >
+        </li>
+        <li class="nav-item ml-2">
+          <a
+            class="nav-link"
+            routerLink="skills"
+            [ngClass]="{ active: activeTab === 'Skills' }"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            (click)="tabSelection('Skills')"
+            ><b>Skills</b></a
+          >
+        </li>
+        <li class="nav-item ml-2">
+          <a
+            class="nav-link"
+            routerLink="experience"
+            [ngClass]="{ active: activeTab === 'Experience' }"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            (click)="tabSelection('Experience')"
+            ><b>Experience</b></a
+          >
+        </li>
+        <li class="nav-item ml-2">
+          <a
+            class="nav-link"
+            active-class="active"
+            routerLink="education"
+            [ngClass]="{ active: activeTab === 'Education' }"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            (click)="tabSelection('Education')"
+            ><b>Education</b></a
+          >
+        </li>
+        <li class="nav-item ml-2">
+          <a
+            class="nav-link"
+            active-class="active"
+            routerLink="faqs"
+            [ngClass]="{ active: activeTab === 'Faqs' }"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            (click)="tabSelection('Faqs')"
+            ><b>FAQs</b></a
+          >
+        </li>
+        <li class="ml-auto m-1" style="font-size: larger">
+          <b>Parth Grover</b>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
