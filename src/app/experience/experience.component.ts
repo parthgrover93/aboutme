@@ -3,21 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
-  icon1: Boolean = true;
-  icon2: Boolean = true;
-  icon3: Boolean = true;
-  icon4: Boolean = true;
-  icon5: Boolean = true;
-  icon6: Boolean = true;
-  icon7: Boolean = true;
-  icon8: Boolean = true;
-  icon9: Boolean = true;
+  icon1: Boolean = false;
+  icon2: Boolean = false;
+  icon3: Boolean = false;
+
   totalExp: string = '';
   relevantExp: string = '';
-
+  startDateTechM: string = '2021-05-25';
+  startDatePrakat: string = '2020-04-16';
+  endDatePrakat: string = '2021-05-23';
+  startDateUnitedLex: string = '2016-03-21';
+  endDateUnitedLex: string = '2019-09-18';
   constructor() {}
 
   ngOnInit(): void {
@@ -75,19 +74,6 @@ export class ExperienceComponent implements OnInit {
       this.icon2 = !this.icon2;
     } else if (input == 3) {
       this.icon3 = !this.icon3;
-    } else if (input == 4) {
-      this.icon4 = !this.icon4;
-    } else if (input == 5) {
-      this.icon5 = !this.icon5;
-    } else if (input == 6) {
-      this.icon6 = !this.icon6;
-    } else if (input == 7) {
-      this.icon7 = !this.icon7;
-    } else if (input == 8) {
-      this.icon8 = !this.icon8;
-    } else if (input == 9) {
-      this.icon9 = !this.icon9;
     }
   }
 }
-
